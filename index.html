@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Major+Mono+Display&family=Megrim&family=Monsieur+La+Doulaise&family=Nova+Mono&family=Reggae+One&family=Vast+Shadow&display=swap');
+      </style>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title> Calculadora IMC</title>
+</head>
+<body>
+    <h1> Indíce de Massa Corporal</h1>
+
+<div>
+
+    <label for="peso" class="peso"> Peso (Kg) :</label>
+      <input type="number" id="peso" name="peso">
+      <br>
+
+    <label for="altura" class="altura"> Altura : </label>
+      <input type="number" id="altura" name="altura">
+      <br>
+
+    <button onclick="calcularImc()"> Calcular IMC</button>
+      <br>
+      <p>Seu Indíce de Massa Corporal é: <span id="resultado"></span></p>
+
+</div>
+      <script>
+        function calcularImc(){
+            const peso = window.document.getElementById("peso").value; 
+            const altura = window.document.getElementById("altura").value;
+            const imc = peso / (altura**2)
+            document.getElementById ("resultado").textContent = imc.toFixed(2)
+        }
+
+        let tituloDinamico = document.title;
+        window.addEventListener("blur", ()=>{
+            document.title = " Porque você está saindo?"
+        })
+
+        window.addEventListener("focus", ()=>{
+            document.title = tituloDinamico
+        })
+        
+      </script>
+
+     
+<footer>
+    created by <a id="nome" href="https://instagram.com/akey_alee?igshid=ZDdkNTZiNTM= ">  akey_alee</a>
+       </footer>
+
+</body>
+</html>

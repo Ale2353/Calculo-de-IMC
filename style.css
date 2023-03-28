@@ -1,0 +1,63 @@
+body{
+    text-align: center;
+    background-image: url( img1.png);
+    background-size: cover;
+    background-position: center;
+    font-family: 'Major Mono Display', monospace;
+font-family: 'Megrim', cursive;
+font-family: 'Monsieur La Doulaise', cursive;
+font-family: 'Nova Mono', monospace;
+font-family: 'Reggae One', cursive;
+font-family: 'Vast Shadow', cursive;
+}
+
+h1{
+    text-align: center;
+    font-size: 50px;
+}
+
+div{
+    font-size: 25px;
+    margin: 80px 300px 100px;
+    height: 500px;
+    background-color: #a36d3b ;
+    border-radius: 13px;
+    padding: 30px;
+    box-shadow: 0 20px 60px black;
+    display: flex;
+    flex-direction: column;
+}
+
+button{
+    border-radius: 20px;
+    margin: 20px 80px 30px ;
+    font-size: 20px;
+    font-family: 'Major Mono Display', monospace;
+    font-family: 'Megrim', cursive;
+    font-family: 'Monsieur La Doulaise', cursive;
+    font-family: 'Nova Mono', monospace;
+    font-family: 'Reggae One', cursive;
+    font-family: 'Vast Shadow', cursive;
+}
+    
+input{
+    border-radius: 40px;
+    width: 600px;
+    margin-left: 40px;
+    margin-right: 30px;
+    font-size: 20px;
+    
+}
+
+.nome{
+    color: black;
+}
+
+
+ a:hover{
+   color: maroon;
+ }
+    
+a {
+    color: black;
+}
